@@ -1,4 +1,4 @@
-**Proof of Concept - Managing different user roles**
+Proof of Concept - Managing different user roles
 
 Description:
 This POC demonstrates how the test automation framework can manage different user roles and handle user-specific actions and data.
@@ -9,7 +9,7 @@ User Roles:
 - Client
 
 
-1. **Define User Roles and Associated Data:**
+1. Define User Roles and Associated Data:
    - Admin:
      - Admin-specific actions: Access to all features, user management, content management, etc.
      - Admin-specific data: Admin credentials, user records, permissions.
@@ -46,28 +46,28 @@ Example json with data:
 }
 
 
-2. **Role Switching in Test Scenarios:**
+2. Role Switching in Test Scenarios:
 
-   **Test Scenario 1: Admin Performs User Management**
+   Test Scenario 1: Admin Performs User Management
    - Login as Admin
    - Perform admin-specific actions (e.g., create new users, modify user permissions)
    - Assertions for successful user management
    
-   **Test Scenario 2: Customer Places an Order**
+   Test Scenario 2: Customer Places an Order
    - Login as Customer
    - Perform customer-specific actions (e.g., add items to the cart, place an order)
    - Assertions for successful order placement
 
-   **Test Scenario 3: Client Views Content**
+   Test Scenario 3: Client Views Content
    - Login as Client
    - Perform client-specific actions (e.g., view content, read comments)
    - Assertions for content visibility
 
-3. **Handling User-Specific Data:**
+3. Handling User-Specific Data:
    - Utilize data fixtures or generators to provide role-specific data for tests - use above Json in some way
    - Ensure that user data and actions are aligned with their respective roles.
 
-4. **Role Switching Mechanism:**
+4. Role Switching Mechanism:
    - Implement a mechanism to switch between user roles in tests. This could be achieved through functions or utilities that log in with role-specific credentials.
 
 
