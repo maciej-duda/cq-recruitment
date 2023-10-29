@@ -1,0 +1,51 @@
+Document for Establishing a QA Process in the Release Delivery Pipeline
+
+Introduction:
+
+The purpose of this document is to outline the necessary steps and processes to establish an effective QA process in the release delivery pipeline. The QA process plays a crucial role in ensuring the quality of the software and customer satisfaction. This document outlines my perspective on the QA role within the project along with practical guidelines and recommendations based on the previous experiences.
+
+QA Role in the Project:
+- QA plays an integral role in the project, responsible for ensuring the product's quality.
+
+Some of the responsibilities:
+- Monitoring code quality, development processes, and deployments.
+- Creating testing strategies and test plans tailored to the product specifications.
+- Performing automated and manual testing and analyzes results.
+- Reporting defects and tracking of their status.
+- Collaborating with the development team, project management and sometimes end client.
+
+Steps and Processes:
+
+Requirement Analysis and Test Strategy Definition:
+- QA participates in requirement analysis and defines testing strategies at an early project stage.
+
+Unit Testing and Acceptance Testing:
+- Conducts unit testing and acceptance testing based on defined release criteria.
+
+Test Automation:
+- Automates functional and regression tests for continuous quality control.
+
+Release Criteria:
+- Defines the criteria necessary for the release of a new version.
+Deployment:
+- Deploys the tested version into production and lower environments such an dev/stage/uat - depending on the naming convention in project.
+
+Monitoring and Improvement:
+- Monitors production, gathers user feedback, and continues product improvement.
+
+Defining Testing Strategies for SaaS Web Applications:
+- Perfoming non-fuctional testing such as accessibility, performance and security audits. 
+- Test data sharing and access features.
+
+Collaboration with Development Team and Project Management:
+- Regular project team meetings to clarify requirements and test results in meetings such as Tri-amigos, QA-dev hugs, refinements, demos, etc. - frequency of the meetings depends on the sprint duration, scope of the development during them and needs. 
+- Utilization of issue tracking and project management tools, such as JIRA, Trello, etc.
+
+Tools:
+- Test automation tools like Selenium or Cypress.
+- Application performance monitoring tools like SpeedCurve, JMeter, etc.
+Of course used tools may vary between projects depending on the scope, requirements, team knowledge and tools they're used to. 
+
+Conclusion:
+
+The QA process in the release delivery pipeline is crucial to ensure product quality. My vision of the QA role encompasses all project stages, from requirement analysis to production monitoring. QA collaborates with developers and project management to support continuous product quality improvement. Implementing the recommendations and guidelines in this document helps create an efficient QA process.
