@@ -10,6 +10,10 @@ class TodoPage {
     verifyItem(itemText) {
       cy.get('label').should('have.text', itemText);
     }
+
+    completeItem(itemText) {
+        cy.get('.toggle').click();
+      }
   }
   
   export default new TodoPage();
