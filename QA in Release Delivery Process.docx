@@ -19,8 +19,8 @@ Steps and Processes:
 Requirement Analysis and Test Strategy Definition:
 - QA participates in requirement analysis and defines testing strategies at an early project stage.
 
-Unit Testing and Acceptance Testing:
-- Conducts unit testing and acceptance testing based on defined release criteria.
+Acceptance Testing:
+- Conducts Acceptance testing based on defined criterias.
 
 Test Automation:
 - Automates functional and regression tests for continuous quality control.
@@ -44,7 +44,12 @@ Collaboration with Development Team and Project Management:
 Tools:
 - Test automation tools like Selenium or Cypress.
 - Application performance monitoring tools like SpeedCurve, JMeter, etc.
+- Test Cases management tools like XRay or TestRail
 Of course used tools may vary between projects depending on the scope, requirements, team knowledge and tools they're used to. 
+
+Incident management:
+- Establishes a process for incident management, which includes reporting, tracking, and resolving issues.
+- Prioritizes tasks and bugs based on factors like severity, impact, and business priorities.
 
 Conclusion:
 
