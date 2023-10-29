@@ -1,0 +1,18 @@
+First of all - I have chosen Cypress as a tool, because it's the main tool I have experience with. 
+My second choice would probably be Playwright, as it's a tool that has been gaining popularity and received a significant update some time ago.
+
+Some other reasons why Cypress:
+
+1. Real-Time Browsing: Cypress allows real-time browsing of the application while running tests, enabling easy debugging and monitoring of test scenarios.
+
+2. JavaScript/TypeScript Language Support: Cypress supports both JavaScript and TypeScript, making it an ideal tool for projects written in these languages.
+
+3. Clear Reports: Cypress generates clear test result reports, making it easy to understand test outcomes and identify any issues.
+
+4. Debugging Tools: Cypress provides various useful debugging tools, including step-by-step execution, setting breakpoints, and access to the browser console during tests.
+
+5. Community and Support: Cypress has an active community and rich documentation. If you encounter issues, you can rely on support from other users and tool creators.
+
+6. Open Source and Free: Cypress is an open-source project and available for free, meaning there are no licensing costs.
+
+Of course in a real project, it is important to verify if the tool and the programming language will fit the needs and capabilities of other team members to help with it, eventually to make code reviews easier.
