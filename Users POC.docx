@@ -1,0 +1,74 @@
+**Proof of Concept - Managing different user roles**
+
+Description:
+This POC demonstrates how the test automation framework can manage different user roles and handle user-specific actions and data.
+
+User Roles:
+- Admin
+- Customer
+- Client
+
+
+1. **Define User Roles and Associated Data:**
+   - Admin:
+     - Admin-specific actions: Access to all features, user management, content management, etc.
+     - Admin-specific data: Admin credentials, user records, permissions.
+   - Customer:
+     - Customer-specific actions: Shopping, order management, profile management, etc.
+     - Customer-specific data: Customer credentials, order history, saved items.
+   - Client:
+     - Client-specific actions: Viewing content, comments, limited interaction.
+     - Client-specific data: Client credentials, content details.
+
+Example json with data:
+
+{
+  "Roles": [
+    {
+      "Name": "Admin",
+      "SecurityPermissions": "Full",
+      "LoginName": "AdminUser",
+      "Password": "**" // probably use some token that will be passed through CI/CD pipeline
+    },
+    {
+      "Name": "Customer",
+      "SecurityPermissions": "Create",
+      "LoginName": "CustomerUser",
+      "Password": "**" // probably use some token that will be passed through CI/CD pipeline
+    },
+    {
+      "Name": "Client",
+      "SecurityPermissions": "Review",
+      "LoginName": "ClientUser",
+      "Password": "**" // probably use some token that will be passed through CI/CD pipeline
+    }
+  ]
+}
+
+
+2. **Role Switching in Test Scenarios:**
+
+   **Test Scenario 1: Admin Performs User Management**
+   - Login as Admin
+   - Perform admin-specific actions (e.g., create new users, modify user permissions)
+   - Assertions for successful user management
+   
+   **Test Scenario 2: Customer Places an Order**
+   - Login as Customer
+   - Perform customer-specific actions (e.g., add items to the cart, place an order)
+   - Assertions for successful order placement
+
+   **Test Scenario 3: Client Views Content**
+   - Login as Client
+   - Perform client-specific actions (e.g., view content, read comments)
+   - Assertions for content visibility
+
+3. **Handling User-Specific Data:**
+   - Utilize data fixtures or generators to provide role-specific data for tests - use above Json in some way
+   - Ensure that user data and actions are aligned with their respective roles.
+
+4. **Role Switching Mechanism:**
+   - Implement a mechanism to switch between user roles in tests. This could be achieved through functions or utilities that log in with role-specific credentials.
+
+
+
